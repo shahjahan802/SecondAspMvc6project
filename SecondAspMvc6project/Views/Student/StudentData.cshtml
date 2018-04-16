@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "StudentData";
+}
+
+<h2>StudentData</h2>
+/*
+<h1>
+    @ViewBag.studentId
+    ..............................
+    @ViewBag.sTudentname
+    @ViewBag.studentid
+</h1>
+
+@for (int a = 1; a < 10; a++)
+{
+    <h3>
+        @ViewBag.studentid
+    </h3>
+
+
+}*/
+
+@{
+   Student s1 = ViewBag.studinfo;
+}
+
+    <h3>
+        @s1.id
+    </h3>
+    <h3> @s1.name</h3>
+    <h3>@s1.subject</h3>
+    <h3>@s1.institute</h3>
+    <h3>@s1.course</h3>
+<h3> @s1.time</h3>
+   
+
+
+
