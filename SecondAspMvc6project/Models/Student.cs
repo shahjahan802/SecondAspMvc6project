@@ -15,7 +15,9 @@ namespace SecondAspMvc6project.Models
         public string course { get; set; }
         public string institute{ get; set; }
         public DateTime time { get; set; }
-     
+        public DayOfWeek Dweek { get; set; }
+        public DateTimeOffset dtoffset { get; set; }
+
     }
 
 }

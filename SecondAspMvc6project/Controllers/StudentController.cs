@@ -23,6 +23,7 @@ namespace SecondAspMvc6project.Controllers
             s.course = "oop";
             s.institute = " AJK university";
             //s.time = 3 / 4 /;
+            //s.Dweek = 33442;
                        
             ViewBag.Studinfo = s;
 
