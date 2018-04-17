@@ -4,6 +4,9 @@
 }
 
 <h2>StudentData</h2>
+<h3> ViewData use</h3>
+<h3> @ViewData["roll"]</h3>
+<h3> @ViewData["name"]</h3>
 /*
 <h1>
     @ViewBag.studentId
@@ -22,20 +25,23 @@
 }*/
 
 @{
-   Student s1 = ViewBag.studinfo;
+    Student s1 = ViewBag.studinfo;
 }
 
-    <h3>
-        @s1.id
-    </h3>
-    <h3> @s1.name</h3>
-    <h3>@s1.subject</h3>
-    <h3>@s1.institute</h3>
-    <h3>@s1.course</h3>
+<h3>
+    @s1.id
+</h3>
+<h3> @s1.name</h3>
+<h3>@s1.subject</h3>
+<h3>@s1.institute</h3>
+<h3>@s1.course</h3>
 <h3> @s1.time</h3>
 <h3> @s1.Dweek</h3>
 <h3> @s1.dtoffset</h3>
-   
+///////////////////////////////////////////////////////////////////////////////////////
+<h3> <img src="@ViewBag.img" alt="Logo" /></h3>
+
+
 
 
 
