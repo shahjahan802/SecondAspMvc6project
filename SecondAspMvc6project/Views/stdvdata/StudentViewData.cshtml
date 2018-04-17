@@ -1,0 +1,22 @@
+﻿
+
+@using SecondAspMvc6project.Models
+@model SecondAspMvc6project.Models.Student
+
+@{
+    ViewData["Title"] = "StudentViewData";
+}
+<h1> This View Data </h1>
+@*<h2>StudentViewData</h2>
+    @{
+        var stdd = (Student)ViewData["vdstd"];
+    }
+    <h3>  @stdd.id</h3>
+    <h3>  @stdd.name</h3>
+    <h3>  @stdd.subject</h3>*@
+
+<h1> This Direct View </h1>
+<h3>  @Model.id</h3>
+    <h3>  @Model.name</h3>
+    <h3>  @Model.subject</h3>
+   

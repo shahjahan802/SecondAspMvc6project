@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "StudentTempdata";
+}
+
+<h2>StudentTempdata</h2>
+
+<h1> TempData use  </h1><div>
+
+    @TempData["name"]
+    @{
+        TempData.Keep("name");
+    }
+
+    @{ string str = TempData.Peek("name").ToString();
+    }
+    @str
+
+</div>
