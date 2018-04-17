@@ -15,8 +15,8 @@ namespace SecondAspMvc6project.Controllers
             ViewBag.studentId = 802;
             ViewBag.StudentName = "shahJahan";
             ViewData["Roll"] = 7868;
-            ViewData["name"]="Shah jahan";
-
+            ViewData["name"] = "Shah jahan";
+            TempData["Institute"] = "punjabi college";
             //  ViewBag.Title = System.Resources.ApplicationTitle;
             // ViewBag.LabelStatus = ResourceSet.Status;
             //ViewBag.img=@"C:\wwwroot\images\shah.jpg";
@@ -34,8 +34,9 @@ namespace SecondAspMvc6project.Controllers
             s.institute = " AJK university";
             //s.time = 3 / 4 /;
             //s.Dweek = 33442;
-           
-                       
+            // ViewData["VD"] = s;
+            //TempData["TD"] = s;
+
             ViewBag.Studinfo = s;
 
             return View();

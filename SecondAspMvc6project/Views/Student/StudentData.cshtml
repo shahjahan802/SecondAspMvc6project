@@ -4,33 +4,22 @@
 }
 
 <h2>StudentData</h2>
+
 <h3> ViewData use</h3>
+.............................................................................
 <h3> @ViewData["roll"]</h3>
 <h3> @ViewData["name"]</h3>
-/*
-<h1>
-    @ViewBag.studentId
-    ..............................
-    @ViewBag.sTudentname
-    @ViewBag.studentid
-</h1>
+....................................
+<h3>tempdata usees</h3>
+............................................................................
+//<h3> @TempData["institute"]</h3>
 
-@for (int a = 1; a < 10; a++)
-{
-    <h3>
-        @ViewBag.studentid
-    </h3>
-
-
-}*/
-
+........................viewbag...classic and oop approach bot tempview and viewdata not sport oop roach but onlyh classic
 @{
     Student s1 = ViewBag.studinfo;
 }
 
-<h3>
-    @s1.id
-</h3>
+<h3> @s1.id</h3>
 <h3> @s1.name</h3>
 <h3>@s1.subject</h3>
 <h3>@s1.institute</h3>
@@ -40,8 +29,7 @@
 <h3> @s1.dtoffset</h3>
 ///////////////////////////////////////////////////////////////////////////////////////
 <h3> <img src="@ViewBag.img" alt="Logo" /></h3>
-
-
+<h1> View data uses</h1>
 
 
 
