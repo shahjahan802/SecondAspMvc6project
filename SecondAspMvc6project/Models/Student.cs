@@ -17,7 +17,9 @@ namespace SecondAspMvc6project.Models
         public DateTime time { get; set; }
         public DayOfWeek Dweek { get; }
         public DateTimeOffset dtoffset { get; }
-     
+
+        public List<string> stdlist { get; set; }
+
 
     }
 

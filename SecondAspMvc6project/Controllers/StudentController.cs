@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SecondAspMvc6project.Models;
 
+
 namespace SecondAspMvc6project.Controllers
 {
     public class StudentController : Controller
@@ -56,6 +57,14 @@ namespace SecondAspMvc6project.Controllers
             List<Student> objlist = new List<Student>();
             objlist.Add(obj);
             return View(objlist.ToList());
+        }
+        
+        public IActionResult studlistst()
+        {
+            Student std = new Student();
+            std.stdlist = "th";
+            ViewBag.stdd = std;
+            return View();
         }
         
     }
