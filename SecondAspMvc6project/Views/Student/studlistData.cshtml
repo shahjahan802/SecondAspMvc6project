@@ -1,0 +1,21 @@
+﻿@using SecondAspMvc6project.Models;
+@model IList<SecondAspMvc6project.Models.Student>
+@{
+    ViewData["Title"] = "studlistData";
+}
+<h1>List through controller to view data paSS</h1>
+<div>
+    @foreach
+(var obj in
+Model)
+    {
+        <li>Name:-    @obj.id</li>
+        <li>Surname:- @obj.name</li> <br />
+        <li>Surname:- @obj.institute</li> <br />
+    }
+
+</div>
+
+
+<h2>studlistData</h2>
+

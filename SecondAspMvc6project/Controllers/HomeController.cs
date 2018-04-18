@@ -30,6 +30,7 @@ namespace SecondAspMvc6project.Controllers
         {
             ViewData["Message"] = "Your contact page.";
 
+
             return View();
         }
 

@@ -30,11 +30,7 @@ namespace SecondAspMvc6project.Controllers
 
             // Get image path  
 
-           
-
-
-
-
+    
             Student s = new Student();
             s.id = 032148;
             s.name = "Shah Jahan802";
@@ -49,6 +45,17 @@ namespace SecondAspMvc6project.Controllers
             ViewBag.Studinfo = s;
 
             return View();
+        }
+        public IActionResult studlistData()
+        {
+            Student obj = new Student();
+            obj.id = 4444;
+            obj.name = "Vicky list";
+            obj.institute = "Punjab collete.list";
+
+            List<Student> objlist = new List<Student>();
+            objlist.Add(obj);
+            return View(objlist.ToList());
         }
         
     }
