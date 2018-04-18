@@ -17,18 +17,35 @@ namespace SecondAspMvc6project.Controllers
             subject="COMPUTER SCIENCE"
 
             };
-            ViewData["vdStd"] = std;
-
-            return View(std);
+           ViewData["vdStd"] = std;
+            return View();
+            //Direct view not use dataBag
+          //return View(std);
 
         }
-        public IActionResult StudentTempdata()
+      /*  public IActionResult StudentTempdata()
         {
             TempData["Name"] = "This Tempdata show";
-            return RedirectToAction ("StudentViewData");
+            return RedirectToAction ("About","Home");
           
         }
+        */
 
+        public IActionResult StudenttTempData()
+        {
+            Student std = new Student()
+            {
+                id = 123,
+                name = "VIEWDATA",
+                subject = "COMPUTER SCIENCE"
+
+            };
+
+            TempData["STPD"] = std;
+            return View();
+            // return RedirectToAction("About", "Home",std);
+
+        }
 
     }
 }

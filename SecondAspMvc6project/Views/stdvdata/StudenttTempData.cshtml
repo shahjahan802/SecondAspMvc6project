@@ -1,0 +1,15 @@
+﻿@using SecondAspMvc6project.Models;
+@{
+    ViewData["Title"] = "StudenttTempData";
+}
+
+<h2>StudenttTempData</h2>
+@{
+    Student v = TempData["STPD"] as Student;
+}
+<h3>@v.id</h3>
+<h3>@v.name</h3>
+<h3> @v.subject</h3>
+<h3>@v.institute</h3>
+  
+

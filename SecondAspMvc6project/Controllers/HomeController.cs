@@ -15,11 +15,15 @@ namespace SecondAspMvc6project.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult About( Student stpd)
         {
             ViewData["Message"] = "Your application description page.";
 
-            return View();
+            //Student data = TempData["STPD"] as Student;
+            
+            return View(stpd);
+
+            
         }
 
         public IActionResult Contact()
