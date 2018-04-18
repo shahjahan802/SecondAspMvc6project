@@ -17,7 +17,7 @@ namespace SecondAspMvc6project.Controllers
             subject="COMPUTER SCIENCE"
 
             };
-            //ViewData["vdStd"] = std;
+            ViewData["vdStd"] = std;
 
             return View(std);
 
@@ -26,7 +26,7 @@ namespace SecondAspMvc6project.Controllers
         {
             TempData["Name"] = "This Tempdata show";
             return RedirectToAction ("StudentViewData");
-           // return View();
+          
         }
 
 

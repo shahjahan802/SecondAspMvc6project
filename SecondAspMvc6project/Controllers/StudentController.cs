@@ -14,6 +14,7 @@ namespace SecondAspMvc6project.Controllers
         {
             ViewBag.studentId = 802;
             ViewBag.StudentName = "shahJahan";
+          //  ViewBag.path = Ur\wwwroot\images\shah.jpg");
             ViewData["Roll"] = 7868;
             ViewData["name"] = "Shah jahan";
             TempData["Institute"] = "punjabi college";
@@ -23,6 +24,14 @@ namespace SecondAspMvc6project.Controllers
 
 
             //ViewBag.Logo =MapPath("~") + @"Content\Images\Logo.png";
+
+            // GET: Demo/GetImageFromByteArray  
+
+
+            // Get image path  
+
+           
+
 
 
 
