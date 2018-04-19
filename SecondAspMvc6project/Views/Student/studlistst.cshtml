@@ -4,8 +4,13 @@
 }
 
 <h2>studlistst</h2>
-<h1> this list of data</h1>
-@{ var s = (List<string>)ViewBag.Stdd;
-        }
-<h3>@s</h3>
+@{
+    var ss = ViewBag.stdd;
+}
+
+
+@foreach (var item in ss)
+{
+<h3>@item{0};</h3> 
+}
 

@@ -61,11 +61,13 @@ namespace SecondAspMvc6project.Controllers
         
         public IActionResult studlistst()
         {
-            Student std = new Student();
-            std.stdlist = "th";
-            ViewBag.stdd = std;
+            List<string> dat = new List<string>();
+            dat.Add("Shah jahna");
+            dat.Add("Vicky");
+            dat.Add("Usman");
+            ViewBag.stdd = dat;
             return View();
         }
-        
+
     }
 }
