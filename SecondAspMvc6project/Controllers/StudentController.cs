@@ -68,6 +68,16 @@ namespace SecondAspMvc6project.Controllers
             ViewBag.stdd = dat;
             return View();
         }
+        public IActionResult stdDeligation( string id,int roll)
+        {
+            ViewBag.Id = id;
+            ViewBag.Roll = roll;
+            return View();
+        }
+        public IActionResult index()
+        {
+            return View();
 
+        }
     }
 }
