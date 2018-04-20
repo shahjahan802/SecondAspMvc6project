@@ -1,5 +1,13 @@
 ﻿
-
 <h2>TemporaryEmployee</h2>
-
+@{
+    Employee ep = (Employee)TempData["employee"];
+}
+<h1> @ep.EmpID</h1>
+<h1> @ep.EmpFirstName</h1>
+<h1> @ep.EmpLastName</h1>
+@*@foreach (var item in ep)
+{
+    <h2>@item</h2>
+}*@
 

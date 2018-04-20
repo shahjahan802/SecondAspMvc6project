@@ -18,12 +18,12 @@ namespace SecondAspMvc6project.Controllers
             Employee employee = new Employee
                         {
                             EmpID = 121,
-                            EmpFirstName = "Imran",
-                            EmpLastName = "Ghani"
+                            EmpFirstName = "Imran"
+                            
                         };
-                        
             TempData["Employee"] = employee;
-            return View();
+            
+            return RedirectToAction("PermanentEmployee");
         }
 
         //Controller Action 2(PermanentEmployee)
@@ -31,26 +31,31 @@ namespace SecondAspMvc6project.Controllers
         public IActionResult PermanentEmployee()
 
         {
-            Employee employee = TempData["Employee"] as Employee;
-            return View(employee);
-        }
-
-
-        //oop apprach
-       /* public ActionResult Index()
-        {
-            var model = new Review()
+            Employee employee = new Employee
             {
-                Body = "Start",
-                Rating = 5
+                EmpLastName = "sialkot"
+
             };
-            TempData["ModelName"] = model;
-            return RedirectToAction("About");
+            TempData["employee"] = employee;
+            return View();
         }
-         public ActionResult About()
-        {
-            var model = TempData["ModelName"];
-            return View(model);
-        }*/
+
+
+        ////oop apprach
+        //public ActionResult Index()
+        //{
+        //    Employee model = new Employee
+        //    { EmpID = 23,
+        //        EmpFirstName = "ali"
+        //    };
+        //    TempData["ModelName"] = model;
+        //    return RedirectToAction("About");
+        //}
+        //public ActionResult About()
+        //{
+        //     = TempData["ModelName"];
+            
+        //    return View(model);
+        //}
     }
 }
